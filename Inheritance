@@ -1,0 +1,35 @@
+******* INHERITANCE *******
+Inheritance : Child Class can Acquire All properties and Methods from Parent Class.
+it helps to code reusability
+Parent class can also be called 
+i) Super Class
+ii) Base Class
+
+Child Class can also  be called
+i) Sub Class
+ii) Derived Class
+
+Example:
+
+cat,dog,cow these all are living organisms called Animals 
+
+So Animal is the parent Class And cat,dog,cow ,etc all are child classes
+
+inheritance Structure: 
+
+
+ class Animal{                                          ----> Class is Keyword to declare Class and Animal is Class Name
+
+void sound(){                                           ----> void is no return type and sound is the Method with no return type
+
+System.out.println("Animals can make sound: ");        ----> this is the print statement
+}
+}
+class Cat extends Animal{                              -----> here cat can be derived as subclass from animal class using Extends Keyword.
+                                                       ----> Extends Keyword is used to inherit the child class from parent class
+
+void sound(){                                         -->  sound is an parent (Super) method thats overriding child class (Derived class)
+System.out.println("Cat can Sound like meow");
+}
+
+
