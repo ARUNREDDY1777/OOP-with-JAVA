@@ -1,0 +1,38 @@
+Constructors is the Spcial Methods to declare the objects 
+
+there are three Important rules for constructor
+i) Constructors name will always be the same as class Name.
+ii) Constructors can't have Return type.
+iii) Constructors can automatically called when object is created.
+
+Types of Constructors
+
+i) Default Constructors;
+ii) Parameterized Constructor
+iii) No-Arugument Constructor
+
+
+example code
+
+class Book{
+String Name;
+double price;
+Book(){
+System.out.println("Default Constructor");
+ }
+
+Book(String Name,double price){
+    this.Name=Name;
+    this.price=price;
+}
+void display(){
+System.out.println("Name: "+Name+"\n"+"price: "+price);
+}
+}
+public class Main{
+public static void main(String[] args){
+Book b=new Book();
+Book b1=new Book("The new Beginning",34560);
+ b1.display();
+}
+}
